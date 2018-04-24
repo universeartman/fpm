@@ -14,3 +14,19 @@ def fpm():
     '''Do the math'''
     
     """Print the required FPM requirement"""
+    from tkinter import *
+
+root = Tk()
+
+canvas = Canvas(root, width=200, height=100)
+canvas.pack()
+
+
+x = 15
+
+blackline = canvas.create_line(0, 70, 200, 70)
+redline = canvas.create_line(0,70, 200, x, fill="red")
+red2line = canvas.create_line(200,70, 200, x, fill="red")
+
+
+root.mainloop()
